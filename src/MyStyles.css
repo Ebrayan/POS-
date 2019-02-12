@@ -1,0 +1,35 @@
+.button-raised{
+    -fx-padding: 0.7em 0.57em;
+    /*-fx-font-size: 22px;*/
+    -jfx-button-type: RAISED;
+    -fx-background-color:  #D63333;
+    /*-fx-pref-width: 200;  */
+/*    -fx-text-fill: WHITE;*/
+    font-family: sans-serif;
+    
+    -jfx-rippler-recenter: Boolean;
+    font-size: 30px;
+
+}
+
+.menuItem:hover{
+ 
+
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    
+}
+
+.menuItem{
+ 
+    -fx-background-radius: 20;
+    -fx-background-color: #ffffff;
+       
+}
+
+.jfx-snackbar-content{
+    -fx-background-color: blue; 
+}
+.jfx-snackbar-fill{
+    -fx-background-color: yellow;
+}

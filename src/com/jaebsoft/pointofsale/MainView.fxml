@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1358.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jaebsoft.pointofsale.FXMLDocumentController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="mainpane" maxHeight="772.0" maxWidth="1366.0" minHeight="768.0" minWidth="1318.0" prefHeight="772.0" prefWidth="1318.0" stylesheets="@../../../MyStyles.css">
+         <children>
+            <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+            <Pane layoutX="6.0" layoutY="7.0" prefHeight="122.0" prefWidth="1344.0" style="-fx-background-color: #D63333;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="25.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Resources/profile.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="29.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employed Name ">
+                     <font>
+                        <Font name="Agency FB" size="12.0" />
+                     </font>
+                  </Text>
+                  <FontAwesomeIconView fx:id="btnClose" fill="WHITE" glyphName="CLOSE" layoutX="1315.0" layoutY="33.0" size="35" />
+                  <FontAwesomeIconView fx:id="btnMinimizar" fill="WHITE" glyphName="MINUS" layoutX="1273.0" layoutY="33.0" size="35" />
+                  <Text fill="WHITE" layoutX="553.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu Principal">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="35.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane fx:id="btn_go_UserView" layoutX="1028.0" layoutY="509.0" prefHeight="314.0" prefWidth="256.0" styleClass="menuItem" stylesheets="@../../../MyStyles.css">
+               <children>
+                  <ImageView fitHeight="256.0" fitWidth="324.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Resources/users.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="71.0" layoutY="268.0" text="Usuarios" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+            <Pane fx:id="btn_go_ClientView" layoutX="739.0" layoutY="514.0" prefHeight="314.0" prefWidth="256.0" styleClass="menuItem">
+               <children>
+                  <ImageView fitHeight="194.0" fitWidth="256.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Resources/clients.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="62.0" layoutY="253.0" text="Clientes" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+            </Pane>
+            <Pane fx:id="btn_go_InvetoryView" layoutX="330.0" layoutY="509.0" prefHeight="314.0" prefWidth="256.0" styleClass="menuItem">
+               <children>
+                  <ImageView fitHeight="185.0" fitWidth="256.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Resources/inve.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="51.0" layoutY="253.0" text="Inventario" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Pane>
+            <Pane fx:id="btn_go_POSView" layoutX="24.0" layoutY="544.0" prefHeight="314.0" prefWidth="256.0" styleClass="menuItem">
+               <children>
+                  <ImageView fitHeight="181.0" fitWidth="256.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Resources/ima.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="12.0" layoutY="244.0" text="Punto de Venta" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Pane>
+            <Text layoutX="16.0" layoutY="747.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Configuracion">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="34.0" layoutY="637.0" style="-fx-background-radius: 20;" text=" ">
+               <graphic>
+                  <OctIconView glyphName="SETTINGS" size="50" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="button-raised" />
+                  <String fx:value="menuItem" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton alignment="TOP_CENTER" contentDisplay="TOP" layoutX="423.0" layoutY="177.0" prefHeight="314.0" prefWidth="256.0" ripplerFill="#7429f5" style="-fx-background-radius: 20; -fx-text-fill: black;" text="Almacén">
+               <graphic>
+                  <OctIconView glyphName="PACKAGE" size="200" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="button-raised" />
+                  <String fx:value="menuItem" />
+               </styleClass>
+               <font>
+                  <Font name="Book Antiqua" size="28.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="TOP_CENTER" contentDisplay="TOP" layoutX="724.0" layoutY="177.0" prefHeight="314.0" prefWidth="256.0" ripplerFill="#7429f5" style="-fx-background-radius: 20; -fx-text-fill: black;" text="Almacén">
+               <graphic>
+                  <OctIconView glyphName="PACKAGE" size="200" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="button-raised" />
+                  <String fx:value="menuItem" />
+               </styleClass>
+               <font>
+                  <Font name="Book Antiqua" size="28.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="TOP_CENTER" contentDisplay="TOP" layoutX="1019.0" layoutY="179.0" prefHeight="314.0" prefWidth="256.0" ripplerFill="#d63333" style="-fx-background-radius: 20; -fx-text-fill: black;" text="Usuario">
+               <styleClass>
+                  <String fx:value="button-raised" />
+                  <String fx:value="menuItem" />
+               </styleClass>
+               <font>
+                  <Font name="Book Antiqua" size="28.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#d63333" glyphName="USERS" size="200" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="TOP_CENTER" contentDisplay="TOP" layoutX="100.0" layoutY="167.0" prefHeight="314.0" prefWidth="256.0" ripplerFill="#7429f5" style="-fx-background-radius: 20; -fx-text-fill: black;" text="Punto de Venta">
+               <graphic>
+                  <OctIconView glyphName="PACKAGE" size="200" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="button-raised" />
+                  <String fx:value="menuItem" />
+               </styleClass>
+               <font>
+                  <Font name="Book Antiqua" size="28.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
